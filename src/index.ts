@@ -2,10 +2,10 @@ import express from "express";
 import type { Request, Response } from "express"; // 👈 use `type` keyword
 import "dotenv/config";
 import cors from "cors";
-import authRoutes from "./routes/authRoutes.ts";
-import bookRoutes from "./routes/bookRoutes.ts";
-import { connectDB } from "./lib/db.ts";
-import job from "./lib/cron.ts";
+import authRoutes from "./routes/authRoutes";
+import bookRoutes from "./routes/bookRoutes";
+import { connectDB } from "./lib/db";
+import job from "./lib/cron";
 
 const app = express();
 const PORT = process.env.PORT || 4000;

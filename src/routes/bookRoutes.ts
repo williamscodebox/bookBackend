@@ -1,12 +1,12 @@
 import express from "express";
 import type { Router } from "express";
-import protectRoute from "../middleware/auth.middleware.ts";
+import protectRoute from "../middleware/auth.middleware";
 import {
   createBook,
   deleteBook,
   getBooks,
   getByUser,
-} from "../controllers/bookController.ts";
+} from "../controllers/bookController";
 
 const router: Router = express.Router();
 

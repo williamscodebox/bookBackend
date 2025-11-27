@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
-import Book from "../models/Book.ts";
-import cloudinary from "../lib/cloudinary.ts";
+import Book from "../models/Book";
+import cloudinary from "../lib/cloudinary";
 
 // Extend Express Request to include `user`
 interface AuthRequest extends Request {

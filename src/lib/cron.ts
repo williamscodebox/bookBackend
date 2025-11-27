@@ -1,7 +1,8 @@
-import cron from "cron";
 import https from "https";
 
-const job = new cron.CronJob("*/14 * * * *", function () {
+const { CronJob } = require("cron");
+
+const job = new CronJob("*/14 * * * *", function () {
   const apiUrl = process.env.API_URL;
   if (!apiUrl) {
     console.error("API_URL is not defined in environment variables");
